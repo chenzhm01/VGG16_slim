@@ -1,0 +1,19 @@
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC77elCwvi1vOS38sFRGsPfKtq4pvdzIrzm1MCXI+C044dvSs+CxOqH/5PGpyEBTkkIPJhknWmNKKoc7ybg5SU4gOEs+UD6beEqAqqIN1WS6KwaeVKsMwtk/JkmZZI5MWee+O/c+FnmQgovRCiTC8j+h/WWG1l0uyxZsn7IQm+l2yt3vRjrJO12/D6LRn1Vp07/OhYIzmqlicBQd9XRSf1fmtTYlkAh1AbAVntJs47/J2yoKEtB4z1SvcXBrY3LToo6TBv9jmSrE7LLb5SseG1cBBLyWBRk6CLYQrUYtuuxab/Rfy7QJywXnXLJG4HqtWgPs334M3ojTUf8Aitkvvbp chenzhm01
+
+
+1. ssh-keygen -C "chenzhm01" -f ~/.ssh/github
+2. gedit /home/chenzhm/.ssh/github.pub
+3. ssh -T git@github.com
+
+1.Github网页新建一个仓库，名为：Django_Study
+2.复制项目URL
+3.在本地进入项目列表 :Myblog
+4.执行命令： git init
+5.执行命令： git add .
+6.执行命令：git status
+    该命令会把你本地工作区和暂存区的版本进行比较，查 看当前的状态。我下面的状态是已经把所有文件加入到了 暂存区中，但是还没有提交到本地历史区。
+7.执行命令：git commit -m "初始化提交"
+    此时文件还在本地。
+8.执行命令git remote add origin 复制项目的url
+9.执行命令：git pull origin master
+10.提交命令：git push -u origin master
